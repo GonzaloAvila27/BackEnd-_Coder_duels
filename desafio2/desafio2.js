@@ -55,7 +55,7 @@ const DelById = (searchId) => {
         return;
     }
 
-    products.splic(index, 1);
+    products.splice(index, 1);
     saveProduct(products);
 
 }
