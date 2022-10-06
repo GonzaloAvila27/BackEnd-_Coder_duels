@@ -1,5 +1,6 @@
 
 const fs = require("fs");
+const path = require("path");
 const productList = "products.json"; //NO me tira bien la direccion :/
 
 
