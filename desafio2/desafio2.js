@@ -20,13 +20,13 @@ const getAll = () => {
 }
 
 const getById = (searchId) => {
-    const arrayMap = readArchive
+    const products = readArchive();
 
-    const index = arrayMap.findIndex((aProduct) => aProduct.id === id)
+    const index = products.findIndex((aProduct) => aProduct.id === searchId)
     if(index < 0) {
         throw new Error("product don't exist")
     }
-    return arrayMap(index)
+    return arrayMap(index);
 }
 
 const save = (data) => {
@@ -41,10 +41,24 @@ const save = (data) => {
     }
 
     products.push(newProduct);
-    saveProduct(products)
+    saveProduct(products);
 }
 
+const DelAll = () => {
+    saveProduct([]);
+}
 
+const DelById = (searchId) => {
+    const products = readArchive();
+    const index = products.findIndex((aProduct) => aProduct.id === searchId);
+    if(index < 0) {
+        return;
+    }
+
+    products.splic(index, 1);
+    saveProduct(products);
+
+}
 save (
     {
         title: "CASA",
