@@ -1,0 +1,15 @@
+npm init -y 
+npm i(or install) "library name"   -g (if global)
+
+VERSIONADO
+^ (carot?) actualiza patches y minor realease -- "^0.13.0" actualiza 0.13.1 si // 0.20.20 si // 1.20.0 ya no  
+
+"~" alt + 126 actualiza solo patches --- "~0.13.0" actualiza 0.13.1 si // 0.20.20 no // 1.20.0 no
+
+"*" alt + 126 actualiza solo patches --- "*0.13.0" actualiza todo 0.13.1 si // 0.20.20 si // 1.20.0 si
+
+
+npm i nodemon -D ((D de desarrollo) No instalar global)
+eb start "npm main.js"
+
+|| acsii alt+124

@@ -1,0 +1,22 @@
+[
+    {
+       "id": 1,
+      "title": "Pipa",
+      "price": 250.59
+    },
+    {
+       "id": 2,
+      "title": "Palito",
+      "price": 369.69
+    },
+    {
+      "id": 3,
+      "title": "Peroroncino",
+      "price": 120.89
+    },
+    {
+      "id": 4,
+      "title": "Pastel",
+      "price": 500.99
+    }
+  ]
