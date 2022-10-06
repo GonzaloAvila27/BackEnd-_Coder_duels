@@ -14,14 +14,18 @@ class Container {
     }
 
 
-        readArchive = () => {
-            const data = fs.readFileSync(productList, 'utf-8');
-            return JSON.parse(data);
+        readArchive = (productList) => {
+           try {
+                const data = fs.readFileSync(productList, 'utf-8');
+            return JSON.parse(data);} catch {
+                console.log("error readfile");
+            }
+
         }
 
         saveProduct = async (products) => {
             const data = JSON.stringify(products, null, '/t');
-        await  fs.writeFileSync(productList, data);
+            await  fs.writeFileSync(productList, data);
 
         }
 
