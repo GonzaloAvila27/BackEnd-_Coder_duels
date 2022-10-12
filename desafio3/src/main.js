@@ -1,7 +1,7 @@
 const http = require('http');
-const Container = require("../../desafio2/desafio2");
+const Container = require("../../desafio2/desafio2.js");
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 
 const server = app.listen(PORT, () => {
