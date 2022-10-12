@@ -84,3 +84,5 @@ save (
         price: 7000
     }
 )
+
+module.exports = Container;
