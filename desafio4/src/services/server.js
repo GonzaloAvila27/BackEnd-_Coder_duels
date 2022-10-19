@@ -14,4 +14,14 @@ app.get(`/`, (req, res) => {
     })
 });
 
+app.use((err, req, next) => {
+    const status = err.status || 500;
+    const message = err.message || `internal server error`;
+
+    res.status(status).json({
+        message,
+        stack: err.stack, 
+    })
+});
+
 module.exports = app;

@@ -10,21 +10,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-   try{ const {id} = req.params.id;
+ const {id} = req.params.id;
     
     const product = ProductsController.getById(id)
     res.json({
         msg: product
     })
-    } catch(err) {
-        const status = err.status || 500;
-        const message = err.message || `internal server error`;
-
-        res.status(status).json({
-            message,
-            stack: err.stack, 
-        })
-    }
 })
 
 router.post('/', (req, res) => {
