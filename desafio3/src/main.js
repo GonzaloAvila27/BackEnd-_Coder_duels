@@ -29,7 +29,7 @@ app.get("/productos", (req, res) => {
     };
     show();
 });
-pp.get("/productoRandom", (req, res) => {
+app.get("/productoRandom", (req, res) => {
     const random = async () => {
           const productArray = await productos.getAll();
           let numero = Math.floor(

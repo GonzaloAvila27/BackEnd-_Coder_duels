@@ -8,6 +8,9 @@ VERSIONADO
 
 "*" alt + 126 actualiza solo patches --- "*0.13.0" actualiza todo 0.13.1 si // 0.20.20 si // 1.20.0 si
 
+npm init 
+npm i express
+npm nodemon -D
 
 npm i nodemon -D ((D de desarrollo) No instalar global)
 eb start "npm main.js"
