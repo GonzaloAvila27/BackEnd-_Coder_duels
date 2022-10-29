@@ -1,0 +1,63 @@
+h1{
+    font-size: 50px;   
+    font-weight: 300;
+    margin: 10;
+    padding: 0;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.menu-btn{
+    
+    
+    width:100%;
+   
+}
+h2{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10;
+    padding: 0;
+}
+.spaceReady{
+    background-color: rgb(247, 230, 174);
+}
+p{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: 300;
+
+    margin: 10;
+    padding: 0;
+}
+
+input{
+    width: 100px;
+}
+button{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10 0;
+    
+    
+}
+
+form{
+    border:2px solid white
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:2px solid white;
+    margin: 10;
+    padding: 0;
+    width: 300px;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
