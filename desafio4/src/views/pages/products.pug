@@ -1,0 +1,19 @@
+extends ../layout/home.pug
+block content
+    div(class="row")
+        div(class="col-12")
+         table(class="table table-striped")
+            thead(class="table-light")
+                tr
+                    th(scope="col") ID 🔀
+                    th(scope="col") Title 👑
+                    th(scope="col") Price 💰
+                    th(scope="col") Thumbnail 🖼  
+            tbody(id="tbody")
+                each producto in productos
+                    tr(class="roww")
+                        td= product.id
+                        td= product.title
+                        td= product.price
+                        td=product.thumbnail
+                            img(src=product.thumbnail, alt=product.title, width="10px" height="10px")

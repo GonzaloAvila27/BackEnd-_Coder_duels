@@ -1,0 +1,27 @@
+html 
+    head 
+        title=Pug withh cordons
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous")
+        link(rel="stylesheet" href="./css/style.css")
+    body(class='container')
+        div(class='row')
+            div(class='col-12')
+                h1(class='text-center') PUG GUA GUA  🐶
+        div(class='row justify-content-center')
+            div(class="col-6")
+                button(class='btn btn-danger menu-btn' id='btn')
+                    a(href="./products" class="text-center") Go to Products! 🛒
+            div(class="col-6")
+                button(class='btn btn-danger menu-btn' id='btn')
+                  a(href="./form") Add your thingys! ✍
+
+        div(class="row")
+            div(class="col-12")
+                h2(class="text-center") Why Pug? 🤷‍♂️
+            div(class="col-12")          
+                p(class="text-center") Why not? be or not to be?💀 Pug has the answers..❓ maybe not, it is a pug, an horrible, horrible dog🤢🤮 but simple, and easy to care and love 🐶💞
+        
+        block content
+        script(src="./js/script.js")

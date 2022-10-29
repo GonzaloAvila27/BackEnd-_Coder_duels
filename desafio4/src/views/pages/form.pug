@@ -1,0 +1,13 @@
+extends ../layout/home.pug
+block content
+    form(action='/api/productos', method='POST')
+        div(class="form-group")
+            label(for="title") Title ✒
+            input(type="text", class="form-control", id="title", name="title", placeholder="add title")        
+        div(class="form-group")
+            label(for="precio") Price 💸
+            input(type="text", class="form-control", id="price", name="price", placeholder="add price")
+        div(class="form-group")
+            label(for="picture") Thumbnail 🖼
+            input(type="text", class="form-control", id="picture", name="thumbnail", placeholder="add picture")
+        button(type="submit", class="btn btn-secondary menu-btn") SEND 🛩
