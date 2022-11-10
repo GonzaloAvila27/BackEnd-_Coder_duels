@@ -3,8 +3,11 @@ const express = require('express');
 const mainRouter = require('../routes/index');
 const app = express();
 
-app.use(express.json)
-app.use(express.urlencoded({extended: true}))
+app.use(express.json);
+app.use(express.urlencoded({extended: true}));
+
+const publicPath = path.resolve(__dirname, "../public");
+app.use(express.static(publicPath));
 
 app.use('/api', mainRouter);
 
@@ -13,6 +16,13 @@ app.get(`/`, (req, res) => {
         msg: `ok app :D`
     })
 });
+
+
+app.set("view engine", "pug");
+
+const viewsPath = path.resolve(__dirname, "../views");
+
+app.set("views", viewsPath);
 
 app.use((err, req, next) => {
     const status = err.status || 500;

@@ -16,3 +16,12 @@ npm i nodemon -D ((D de desarrollo) No instalar global)
 eb start "npm main.js"
 
 || acsii alt+124
+
+LS listado de directorio actual -  - en bash y todos ahrre
+
+
+PC
+
+npm i sqlite3 -–build-from-source /// si hay error instalando sqllte
+
+npm i knex sqlite3
