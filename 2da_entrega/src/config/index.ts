@@ -1,7 +1,7 @@
 
 import { NextFunction,Request,Response } from "express";
 
-export const PUERTO:string|number = process.env.PORT || 8080;
+export const PORT:string|number = process.env.PORT || 8080;
 
 const admin:boolean = false
 

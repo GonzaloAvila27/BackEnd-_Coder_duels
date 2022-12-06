@@ -14,3 +14,8 @@ export interface CartType{
     timestap:string,
     productos:[ProductsType]
 }
+
+export interface Error {
+    status?: number,
+    message?: string
+}
